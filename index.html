@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arkadiusz Błochowiak, HTML/CSS project">
+    <title>DAHER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-none d-md-block">
+            <div class="row justify-content-end">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="box-element"></div>
+                    <div class="box-element"></div>
+                </div>
+                <div class="col-4 d-flex justify-content-end pt-3">
+                    <ul class="list-unstyled fb-yt">
+                        <li>
+                            <a href="#facebook">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#youtube">
+                                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled lang">
+                        <li>
+                            <a href="#PL">Pl</a>
+                        </li>
+                        <li>
+                            <a href="#FR">Fr</a>
+                        </li>
+                        <li>
+                            <a class="border-0" href="#DE">De</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-md-0 pb-md-4" id="header-nav">
+            <div class="container align-items-md-end">
+                <a class="navbar-brand px-0 px-md-5 py-md-0" href="/">
+                    <img src="/img/logo-fixed.png" class="img-fluid" alt="Daher logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-md-auto text-center pt-3 pt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#firma">Firma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aktualnosci">Aktualności</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#uslugi">Zakres Usług</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#realizacje">Realizacje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#flota">Flota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border-0" href="#firma">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="specialists">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row spc-d-img">
+                                <div class="col-12 col-md-6 position-relative">
+                                    <div class="cube bottom-0 end-0 d-none d-md-block"></div>
+                                </div>
+                                <div class="col-12 col-md-6 spc-descr">
+                                    <div class="element-title lh-md-sm">Specjliści od dużych gabarytów i ciężarów</div>
+                                    <div class="element-text">
+                                        <span class="fw-bold">Kompleksowe rozwiązania</span> z użyciemtransportu
+                                        szynowego, drogowego i wodnego.
+                                    </div>
+                                    <div class="element-text">
+                                        <span class="fw-bold">Kompletna organizacja</span> łańcucha kigistycznego, w
+                                        kraju i za granicą.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="firm">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 fir-descr">
+                                    <div class="element-title">Firma</div>
+                                    <ul class="list-unstyled element-ul">
+                                        <li><a href="#historia">Historia</a></li>
+                                        <li><a href="#certfikaty">Certyfikaty</a></li>
+                                        <li><a href="#referencje">Referencje</a></li>
+                                    </ul>
+                                    <div class="element-msg lh-sm">Innowacyjne rozwiązania poprate <span
+                                            class="fw-bold">150-letnim doświadczeniem</span></div>
+                                </div>
+                                <div class="col-12 col-md-6 px-0 fir-img position-relative">
+                                    <div class="splide">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="/img/transport/fir-1.jpg">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="/img/transport/fir-2.jpg">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="/img/transport/fir-3.jpg">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="/img/transport/fir-4.jpg">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cube bottom-0 start-0 d-none d-md-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 new-descr position-relative">
+                                    <div class="element-title lh-sm">Daher projects dostarcza na kontynet ameryki
+                                        północnej</div>
+                                    <div class="element-text">
+                                        Ostatnie projekty DAHER PROJECTS Sp. z o.o. miały miejsce nie tylko na terenie
+                                        Polski czy Europy, ale również realizowaliśmy dostawy do USA i Kanady.
+                                    </div>
+                                    <div class="cube bottom-0 end-0 d-none d-md-block"></div>
+                                </div>
+                                <div class="col-12 col-md-6 new-descr">
+                                    <div class="element-title">Aktualności</div>
+                                    <div class="element-text">
+                                        Wyspecjalizowaliśmy się w realizacji najbardziej skomplikowanych zleceń, które
+                                        robią naprawdę duże wrażenie! Jednak oprócz naszych usług, pragniemy również
+                                        podzielić się innymi wydarzeniami ze świata DAHER.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="containter-fluid p-0">
+                <div class="row cover">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 svc-descr">
+                                    <div class="element-title">Zakres usług</div>
+                                    <div class="d-md-none svc-icon">
+                                        Lista usług
+                                        <i id="svc-drop" class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                                    </div>
+                                    <ul id="svc-list" class="list-unstyled element-ul list-none" >
+                                        <li><a href="#transport_drogowy">Transport drogowy</a></li>
+                                        <li><a href="#transport_kolejowy">Transport kolejowy</a></li>
+                                        <li><a href="#transport_wodny">Transport wodny - śródlądowy, morski i
+                                                oceaniczny</a></li>
+                                        <li><a href="#transport_specjalistyczny">Transport specjalistyczny</a></li>
+                                        <li><a href="#lancuchy_logistyczne">Łańcuchy logistyczne</a></li>
+                                        <li><a href="#zaladunek/przeladunek">Załadunek/przeładunek</a></li>
+                                        <li><a href="#nadzor_nad_transportem">Nadzór nad transportem</a></li>
+                                        <li><a href="#projektowanie">Projektowanie, ekspertyza, realizacja</a></li>
+                                        <li><a href="#wsparcie">Wsparcie</a></li>
+                                    </ul>
+                                    <div class="element-msg lh-sm">Kompleksowe usługi transportowe projektów cargo i nie
+                                        tylko</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="implementation">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 imp-img position-relative ">
+                                    <div class="cube bottom-0 end-0 d-none d-md-block"></div>
+                                </div>
+                                <div class="col-12 col-md-6 imp-descr">
+                                    <div class="element-title">Realizacje</div>
+                                    <div class="element-msg lh-sm">Gwarancja fachowej realizacji najbardziej wymagajacych
+                                        zleceń</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fleet">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 fle-descr">
+                                    <div class="element-title">Flota</div>
+                                    <ul class="list-unstyled element-ul">
+                                        <li>
+                                            <a href="#pojazdy_szynowe">Pojazdy szynowe</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pojazdy_drogowe">Pojazdy drogowe</a>
+                                        </li>
+                                        <li>
+                                            <a href="#konwoj_transportu">Konwój transportu</a>
+                                        </li>
+                                    </ul>
+                                    <div class="element-msg lh-sm">Nowoczesna i Wyspecjalizowana flota pojazdów</div>
+                                </div>
+                                <div class="col-12 col-md-6 fle-img position-relative">
+                                    <div class="cube top-0 start-0 d-none d-md-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col">
+                        <div class="container px-0 px-md-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 con-msg lh-sm position-relative">
+                                    <span>
+                                        Serdecznie zapraszamy wszystkich zainteresowanych naszą ofertą.
+                                    </span>
+                                    <div class="cube top-0 end-0 d-none d-md-block"></div>
+                                </div>
+                                <div class="col-12 col-md-6 con-descr">
+                                    <div class="element-title">Kontakt</div>
+                                    <div class="element-text">
+                                        DAHER Projects, to nie tylko najwyższej jakości usługi przewozowe ładunków
+                                        o dużych gabarytach i masach, ale również profesjonalna obsługa poparta
+                                        150-letnim doświadczeniem. Potrafimy zrealizować każde, nawet najtrudniejsze
+                                        przedsięwzięcie transportowe, nasi inżynierowie są do Państwa dyspozycji
+                                        i zawszę chętnie służą pomocą oraz fachową poradą.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <a href="\">
+                        <img class="img-fluid" src="/img/footer-logo-fixed.png" alt="Daher logo">
+                    </a>
+                </div>
+                <div class="col-12 col-md-8 d-block d-md-flex align-items-md-end pt-4 pt-md-0 ps-md-5">
+                    <ul class="list-unstyled m-0 text-center text-md-start">
+                        <li>
+                            <a href="#policy">Polityka prywatności / Rodo</a>
+                        </li>
+                        <li class="pt-1 pt-md-0">
+                            <a href="#impressum">Impressum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

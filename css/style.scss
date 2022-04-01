@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$lightgray: #d1d4d2;
+$gray: #bdc0bf;
+$darkgray: #555555;
+$verydarkgray: #393939;
+$red: #e30031;
+$darkblue: #092d5c;
+
+$message: 2.8rem;
+$title: 3rem;
+$text: 1.4rem;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+// ----------------------------------------------------------------               header             --------------------------------------------------------------------------
+.header {
+  font-size: 22px;
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-element {
+    width: 30px;
+    height: 30px;
+
+    &:first-child {
+      background-color: $darkblue;
+    }
+
+    &:last-child {
+      background-color: $red;
+    }
+  }
+
+  .fb-yt {
+    display: flex;
+    margin: 0;
+    padding-right: 15px;
+
+    li {
+      padding-left: 5px;
+      padding-right: 5px;
+
+      i {
+        color: $darkgray;
+      }
+
+      &:first-child:hover {
+        i {
+          color: $darkblue;
+        }
+      }
+
+      &:hover {
+        i {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .lang {
+    display: flex;
+    margin: 0;
+
+    a {
+      padding-left: 10px;
+      padding-right: 10px;
+      color: $darkblue;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-right: 1px solid $lightgray;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: white !important;
+  }
+
+  .navbar-brand {
+    img {
+      width: 250px;
+      height: 70px;
+    }
+  }
+
+  .nav-link {
+    padding: 0;
+    color: $darkblue !important;
+    text-transform: uppercase;
+    border-right: 1px solid $red;
+
+    &:hover {
+      color: $red !important;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               main             --------------------------------------------------------------------------
+.main {
+  color: white;
+}
+
+.element-title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: $title;
+  font-weight: 600;
+}
+
+.element-text {
+  padding-top: 30px;
+  border-top: 4px solid white;
+  font-size: $text;
+  font-weight: 300;
+}
+
+.element-msg {
+  border-top: 4px solid white;
+  font-size: $message;
+}
+
+.element-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-bottom: 20px;
+
+  li {
+    padding: 0 10px;
+    border-right: 1px solid $lightgray;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+
+      &:hover {
+        color: $lightgray;
+      }
+    }
+  }
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+@mixin main-element($r: 60px) {
+  min-height: 587px;
+  padding: 50px $r 50px 60px;
+}
+
+// ----------------------------------------------------------------               specialists             --------------------------------------------------------------------------
+.specialists {
+  text-transform: uppercase;
+  background: url("/img/transport/spc-1.jpg"),
+    linear-gradient(90deg, $darkblue 50%, $red 50%);
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .spc-d-img {
+    background: url("/img/transport/spc-2.jpg");
+    background-color: $gray;
+    background-blend-mode: luminosity;
+    background-position: bottom;
+  }
+
+  .cube {
+    background-color: rgba($color: $verydarkgray, $alpha: 0.7);
+  }
+
+  .spc-descr {
+    @include main-element;
+    background-color: rgba($color: $verydarkgray, $alpha: 0.7);
+
+    .element-text:last-child {
+      border-top: 0;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               firm             --------------------------------------------------------------------------
+.firm {
+  background-color: $gray;
+
+  .fir-descr {
+    @include main-element;
+    background-color: $darkblue;
+
+    .element-msg {
+      padding-top: 30px;
+    }
+  }
+
+  .fir-img {
+    .splide__slide {
+      width: 100%;
+      height: 587px;
+    }
+
+    .cube {
+      background-color: $darkblue;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               news             --------------------------------------------------------------------------
+.news {
+  background-color: white;
+
+  .new-descr {
+    @include main-element;
+
+    &:first-child {
+      background-image: url(/img/transport/new-1.jpg);
+      background-color: $gray;
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .cube {
+        background-color: $red;
+      }
+    }
+
+    &:last-child {
+      background-color: $red;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               services             --------------------------------------------------------------------------
+.services {
+  background-image: url(/img/transport/svc-1.jpg);
+  background-color: $lightgray;
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  background-attachment: fixed;
+
+  .cover {
+    background-color: rgba($color: $darkblue, $alpha: 0.6);
+  }
+
+  .svc-descr {
+    @include main-element;
+  }
+
+  .element-msg {
+    padding-top: 30px;
+  }
+}
+
+// ----------------------------------------------------------------               implementation             --------------------------------------------------------------------------
+.implementation {
+  background-image: url(/img/transport/imp-1.jpg);
+  background-color: $lightgray;
+  background-blend-mode: luminosity;
+  text-transform: uppercase;
+
+  .imp-img {
+    min-height: 587px;
+    padding: 0;
+    background-image: url(/img/transport/imp-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .cube {
+      background-color: rgba($color: $darkblue, $alpha: 0.8);
+    }
+  }
+
+  .imp-descr {
+    @include main-element;
+    background-color: rgba($color: $darkblue, $alpha: 0.8);
+
+    .element-msg {
+      padding-top: 10px;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               fleet             --------------------------------------------------------------------------
+.fleet {
+  background-color: white;
+  text-transform: uppercase;
+
+  .fle-descr {
+    @include main-element(20px);
+    background-color: $red;
+
+    .element-msg {
+      padding-top: 20px;
+    }
+  }
+
+  .fle-img {
+    min-height: 587px;
+    padding: 0;
+    background: url(/img/transport/fle-1.jpg);
+    background-color: $red;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .cube {
+      background-color: $red;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               contact             --------------------------------------------------------------------------
+.contact {
+  background-color: $lightgray;
+
+  .con-msg {
+    display: flex;
+    align-items: center;
+    min-height: 587px;
+    padding: 50px 60px;
+    background-color: $darkgray;
+    text-transform: uppercase;
+    font-size: $message;
+
+    .cube {
+      background-color: $verydarkgray;
+    }
+  }
+
+  .con-descr {
+    @include main-element;
+    background-color: $verydarkgray;
+  }
+}
+
+// ----------------------------------------------------------------               footer             --------------------------------------------------------------------------
+.footer {
+  background-color: $darkblue;
+  font-weight: 600;
+  font-size: 15px;
+
+  img {
+    width: 220px;
+    height: 62px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $lightgray;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               medium             --------------------------------------------------------------------------
+@media only screen and (max-width: 992px) {
+  $message: 2.3rem;
+  $title: 2rem;
+  $text: 1.3rem;
+
+  .element-title {
+    font-size: $title;
+  }
+
+  .element-text {
+    padding-top: 15px;
+    border-top: 3px solid white;
+    font-size: $text;
+  }
+
+  .element-msg {
+    border-top: 3px solid white;
+    font-size: $message;
+    hyphens: auto;
+  }
+
+  .contact {
+    .con-msg {
+      font-size: $message;
+      hyphens: auto;
+    }
+  }
+}
+
+// ----------------------------------------------------------------               mobile             --------------------------------------------------------------------------
+@media only screen and (max-width: 768px) {
+  $message: 2.2rem;
+  $title: 1.8rem;
+  $text: 1.2rem;
+
+  $names: (
+    "specialists": "spc",
+    "firm": "fir",
+    "news": "new",
+    "services": "svc",
+    "implementation": "imp",
+    "fleet": "fle",
+    "contact": "con",
+  );
+
+  @each $section, $name in $names {
+    .#{$section} {
+      .#{$name}-descr {
+        min-height: 500px;
+        padding: 40px 40px;
+      }
+    }
+  }
+
+  .header {
+    font-size: 19px;
+
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        width: 190px;
+        height: 50px;
+      }
+    }
+
+    .navbar-nav {
+      li:first-child {
+        border-top: 1px solid $red;
+      }
+
+      li:last-child {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $red;
+      }
+    }
+
+    .nav-link {
+      padding-top: 10px;
+      border-right: none;
+    }
+  }
+
+  .element-title {
+    font-size: $title;
+  }
+
+  .element-text {
+    padding-top: 15px;
+    border-top: 3px solid white;
+    font-size: $text;
+  }
+
+  .element-msg {
+    border-top: 3px solid white;
+    font-size: $message;
+    hyphens: none;
+  }
+
+  .firm .fir-img {
+    .splide__slide {
+      height: 500px;
+    }
+  }
+
+  .services {
+    background-attachment: unset;
+
+    .svc-icon {
+      font-size: 1.5rem;
+      padding-bottom: 15px;
+    }
+
+    .list-none {
+      display: none;
+    }
+  }
+
+  .contact {
+    .con-msg {
+      font-size: $message;
+      padding: 40px 40px;
+      hyphens: none;
+    }
+  }
+
+  .footer {
+    img {
+      width: 190px;
+      height: 50px;
+    }
+  }
+}
